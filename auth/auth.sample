@@ -1,0 +1,3 @@
+app_id <- "{{YOUR APP ID}}"
+client_token <- "{{YOUR CLIENT TOKEN}}"
+access_token <- paste0(app_id,"|",client_token)

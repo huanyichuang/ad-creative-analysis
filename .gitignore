@@ -40,3 +40,4 @@ rsconnect/
 /rawdata/*
 /tmp/
 .DS_Store
+auth/auth
