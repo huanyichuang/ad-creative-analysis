@@ -21,7 +21,7 @@ fb_token <- fbOAuth(app_id, client_token)
 # GET request for your user information
 fb_args <- "?fields=impressions,spend,ad_id,adset_id&level=ad"
 response <- GET("https://graph.facebook.com",
-                path = "/v6.0/act_1194617000638527/insights",
+                path = paste0("/v6.0/act_1194617000638527/insights",fb_args),
                 config = config(token = fb_token))
 
 input.temp$廣告名稱<-gsub(" - 複本","",input.temp$廣告名稱) #把" - 複本"拿掉
